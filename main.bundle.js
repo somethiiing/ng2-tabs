@@ -146,7 +146,7 @@ Tab = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_0" /* Component */])({
         selector: 'tab',
         styles: ["\n    .pane {\n      padding: 1em;\n    }\n  "],
-        template: "\n    <div [hidden]=\"!active\" class=\"pane\">\n    </div>\n  "
+        template: "\n    <div [hidden]=\"!active\" class=\"pane\">\n      <ng-content></ng-content>\n    </div>\n  "
     })
 ], Tab);
 
@@ -194,7 +194,7 @@ __decorate([
 Tabs = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_0" /* Component */])({
         selector: 'tabs',
-        template: "\n    <ul class=\"nav nav-tabs\">\n      <li *ngFor=\"let tab of tabs\" (click)=\"selectTab(tab)\" [class.active]=\"tab.active\">\n        <a href=\"#\">{{tab.title}}</a>\n      </li>\n    </ul>\n  "
+        template: "\n    <ul class=\"nav nav-tabs\">\n      <li *ngFor=\"let tab of tabs\" (click)=\"selectTab(tab)\" [class.active]=\"tab.active\">\n        <a>{{tab.title}}</a>\n      </li>\n    </ul>\n    <ng-content>\n  "
     })
 ], Tabs);
 
