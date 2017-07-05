@@ -1,0 +1,39 @@
+    .white {
+      background-color: white;
+    }
+
+    .blue {
+      background-color: blue;
+    }
+
+    .black {
+      background-color: black;
+    }
+
+    .red {
+      background-color: red;
+    }
+
+    .green {
+      background-color: green;
+    }
+
+    .whiteText p {
+      color: white;
+    }
+
+    .blueText p {
+      color:lightblue;
+    }
+
+    .blackText p {
+      color: white;
+    }
+
+    .redText p {
+      color: pink;
+    }
+
+    .greenText p {
+      color:lightgreen;
+    }
