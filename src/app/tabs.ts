@@ -6,10 +6,10 @@ import { Tab } from './tab';
   template: `
     <ul class="nav nav-tabs">
       <li *ngFor="let tab of tabs" (click)="selectTab(tab)" [class.active]="tab.active">
-        <p>{{tab.title}}</p>
+        <a>{{tab.title}}</a>
       </li>
     </ul>
-    <ng-content></ng-content>
+    <ng-content>
   `
 })
 export class Tabs implements AfterContentInit {
