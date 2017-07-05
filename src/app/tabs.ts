@@ -9,7 +9,6 @@ import { Tab } from './tab';
         <a href="#">{{tab.title}}</a>
       </li>
     </ul>
-    <ng-content></ng-content>
   `
 })
 export class Tabs implements AfterContentInit {
