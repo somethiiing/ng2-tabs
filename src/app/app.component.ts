@@ -42,9 +42,7 @@ import {Tab} from './tab';
 })
 export class AppComponent {
   title = 'app';
-  name;
 
   constructor() {
-    this.name = 'ng2-tabs'
   }
 }
